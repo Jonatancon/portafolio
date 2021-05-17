@@ -3,9 +3,15 @@
   --color-purple: #632ce7;
   --color-gray-medium: #f8f9fa;
   --color-yellow: #fac32c;
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(142, 90%, 61%);
 }
 
 /*------General Styles----*/
+.container > .row{
+  margin-bottom: 3rem;
+}
 a {
   color: inherit;
 }
@@ -57,7 +63,7 @@ a {
   height: var(--box-size);
   position: absolute;
   z-index: -10;
-  animation: turnZ 7s linear alternate-reverse;
+  animation: turnZ 7s linear alternate-reverse infinite;
 }
 
 .photo-frame::before {
@@ -70,9 +76,9 @@ a {
   right: calc(99% - (var(--box-size) / 2));
 }
 .photo-frame::after {
-  --box-size: 5em;
-  bottom: calc(98% - (var(--box-size) / 2));
-  left: calc(98% - (var(--box-size) / 2));
+  --box-size: 4em;
+  bottom: calc(99% - (var(--box-size) / 2));
+  left: calc(99% - (var(--box-size) / 2));
   background: linear-gradient(
       45deg,
       var(--color-gray-medium) 45%,
@@ -96,4 +102,11 @@ a {
 }
 .photo-frame {
   top: 25px;
+}
+/*Services*/
+.icon-service {
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
 }
