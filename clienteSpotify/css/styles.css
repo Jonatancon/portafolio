@@ -1,0 +1,49 @@
+body,
+html {
+  height: 100%;
+  background-image: url("../recursos/img/fondo1.jpg");
+  background-color: #FFDEE9;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+  font-size: 20px;
+  font-family: 'Yellowtail', cursive;
+}
+
+nav > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vance{
+  width: 100%;
+}
+main {
+  padding-top: 4.5rem;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-main {
+  transition: 0.4s transform;
+}
+.card-main:hover{
+  transform: scale(0.8);
+}
+.card-main:hover .card-body > img{
+  animation: turnZ 15s linear alternate infinite;
+}
+.card {
+  background-image: url("../recursos/img/post.jpg");
+}
+.img-main {
+  border-radius: 50%;
+}
+@keyframes turnZ {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <title>Music</title>
+</head>
+
+<body class="container">
+  <header class="row align-items-center header-m justify-content-center">
+    <nav class="container d-flex flex-column flex-md-row justify-content-center text-black fixed-top">
+      <a class="py-2" href="#" aria-label="Music" id="change">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+          viewBox="0 0 24 24">
+          <title>Music</title>
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+      </a>
+    </nav>
+    <hr/>
+    <hr/>
+    <div class="col-md-7 col-sm-12 text-center text-md-start">
+      <!--greeting-->
+      <h1 class="display-2" id="name">
+      </h1>
+      <!--Job-->
+      <p class="text-muted fw-light text-capitalize" id="parraf">
+        
+      </p>
+    </div>
+    <!--img-->
+    <div class="col-md-5 col-sm-12">
+      <div class="position-relative shadow" id="photo">
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <hr />
+    <hr />
+    <main id="main">
+      <div class="row justify-content-around">
+        <h2 class="col-12 display-4 text-capitalize mb-3 text-center">
+          Top Tracks
+        </h2>
+      </div>
+      <section>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="primal">
+
+        </div>
+      </section>
+      
+    </main>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
